@@ -15,7 +15,7 @@ const kms = parseInt(prompt('Quanti km devi percorrere?' , 10).trim());
 const age = parseInt(prompt('Quanti anni hai?' , 30).trim());
 console.log(kms , age);
 
-// ! validazione
+//****/ validazione*****
 if (isNaN(kms) || isNaN(age) || age <= 0 || kms <= 0){
     alert('I dati non sono validi');
 } else{
@@ -49,5 +49,4 @@ if (isNaN(kms) || isNaN(age) || age <= 0 || kms <= 0){
     if(discount){
         totalElement.innerHTML += ` (<del class="text-danger">€${basePrice}</del>)`;
     }
-    
 }
