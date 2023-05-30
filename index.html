@@ -12,7 +12,7 @@
 <body>
     <section class="m-4 form">
         <h1 class="p-3">Calcola il tuo biglietto</h1>
-        <div class="p-3">
+        <div class="p-3 card">
             <div class="p-2">
                 <label for="name">Nome e Cognome</label>
                 <input id="name" type="text" name="" value="" placeholder="Inserisci il tuo nome">
@@ -23,30 +23,32 @@
           </div>
           <div class="p-2">
                 <label for="age">Età</label>
-                <input id=age type="number" name="" value="" placeholder="Inserisci la tua età">
+                <select name="" class="form-select" id="age">
+                <option value="">Adulto</option>
+                <option value="min">Minorenne</option>
+                <option value="over">Over 65</option>
+                </select>
           </div>
           <div class="p-2">
                 <button id="create" class="btn-primary btn">Genera</button>
         </div>
     </section>
 
-    <section class="m-4 ticket-section">
-        <div class="card">
+    <section class="m-4 d-none" id="ticket-section">
+        <div class="card p-3">
             <h2>Biglietto</h2>
-            <div id="passenger">Giacomo Arcangeli</div>
+            <h4 id="passenger">Giacomo Arcangeli<h4>
             <div class="row"></div>
-            <div class="col">
-                <h3>tariffa</h3>
-                <div id="rate">tariffa Giovani</div>
+            <div class="col mt-3">
+                <h2>tariffa</h2>
+                <div id="rate">Tariffa Giovani</div>
             </div>
-            <div class="col">
-                <h3>Totale</h3>
+            <div class="col mt-3">
+                <h2>Totale</h2>
                 <div id="price">€10</div>
             </div>
         </div>
     </section>
 
-    <!-- <h1 id="total"></h1>
-    <p id="discount-message"></p> -->
 </body>
 </html>
